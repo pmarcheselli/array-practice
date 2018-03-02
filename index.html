@@ -46,8 +46,20 @@
   <img src="http://appinventor.mit.edu/explore/sites/all/files/Teach/media/image_8_ball.jpg" alt="a magic 8 ball">
 
   <div>
-    <form name="question">
-      <!-- TODO: Add a text input and submit button, attach to the form handler function you write in scripts.js -->
+    <!-- TODO: Add a text input and submit button, attach to the form handler function you write in scripts.js -->
+    <form name="qForm" onsubmit="answerQ()">
+      <label>Ask the Magic 8 ball:
+            <input type="text" name="question">
+      </label>
+      <input type="submit" value="Submit">      
+    </form>
+  
+    <!-- form to add an answer -->
+    <form name="aForm" onsubmit="newAnswer()">
+      <label>What fortune would you like to see?
+            <input type="text" name="answer">
+      </label>
+      <input type="submit" value="Submit">      
     </form>
   </div>
 </section>
